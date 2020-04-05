@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.ssm.dao.UserMapper">
+  <resultMap id="BaseResultMap" type="com.yxy.ssm.model.User">
+    <id column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="age" jdbcType="INTEGER" property="age" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="weight" jdbcType="DOUBLE" property="weight" />
+    <result column="birthday" jdbcType="DATE" property="birthday" />
+    <result column="nation" jdbcType="VARCHAR" property="nation" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="information" jdbcType="VARCHAR" property="information" />
+    <result column="organization" jdbcType="INTEGER" property="organization" />
+    <result column="flag" jdbcType="BIT" property="flag" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    userid, password, username, sex, age, height, weight, birthday, nation, phone, email, 
+    address, information, organization, flag
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user
+    where userid = #{userid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from user
+    where userid = #{userid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yxy.ssm.model.User">
+    insert into user (userid, password, username, 
+      sex, age, height, weight, 
+      birthday, nation, phone, 
+      email, address, information, 
+      organization, flag)
+    values (#{userid,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=VARCHAR}, #{age,jdbcType=INTEGER}, #{height,jdbcType=DOUBLE}, #{weight,jdbcType=DOUBLE}, 
+      #{birthday,jdbcType=DATE}, #{nation,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
+      #{email,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{information,jdbcType=VARCHAR}, 
+      #{organization,jdbcType=INTEGER}, #{flag,jdbcType=BIT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yxy.ssm.model.User">
+    insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        userid,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="age != null">
+        age,
+      </if>
+      <if test="height != null">
+        height,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="nation != null">
+        nation,
+      </if>
+      <if test="phone != null">
+        phone,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="address != null">
+        address,
+      </if>
+      <if test="information != null">
+        information,
+      </if>
+      <if test="organization != null">
+        organization,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=INTEGER},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        #{age,jdbcType=INTEGER},
+      </if>
+      <if test="height != null">
+        #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=DATE},
+      </if>
+      <if test="nation != null">
+        #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="information != null">
+        #{information,jdbcType=VARCHAR},
+      </if>
+      <if test="organization != null">
+        #{organization,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=BIT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yxy.ssm.model.User">
+    update user
+    <set>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=VARCHAR},
+      </if>
+      <if test="age != null">
+        age = #{age,jdbcType=INTEGER},
+      </if>
+      <if test="height != null">
+        height = #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=DATE},
+      </if>
+      <if test="nation != null">
+        nation = #{nation,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null">
+        address = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="information != null">
+        information = #{information,jdbcType=VARCHAR},
+      </if>
+      <if test="organization != null">
+        organization = #{organization,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        flag = #{flag,jdbcType=BIT},
+      </if>
+    </set>
+    where userid = #{userid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yxy.ssm.model.User">
+    update user
+    set password = #{password,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      age = #{age,jdbcType=INTEGER},
+      height = #{height,jdbcType=DOUBLE},
+      weight = #{weight,jdbcType=DOUBLE},
+      birthday = #{birthday,jdbcType=DATE},
+      nation = #{nation,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      information = #{information,jdbcType=VARCHAR},
+      organization = #{organization,jdbcType=INTEGER},
+      flag = #{flag,jdbcType=BIT}
+    where userid = #{userid,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectUser" resultMap="BaseResultMap" parameterType="Map">
+        select *
+        from user
+        where userid = #{userid} and password = #{password} and flag = 1
+   </select>
+  <insert id="addUser" parameterType="Map">
+        insert into user
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="password != null and password != ''">
+        password,
+      </if>
+      <if test="username != null and username != ''">
+        username,
+      </if>
+      <if test="sex != null and sex != ''">
+        sex,
+      </if>
+      <if test="age != null and age != ''">
+        age,
+      </if>
+      <if test="birthday != null and birthday != ''">
+        birthday,
+      </if>
+      <if test="nation != null and nation != ''">
+        nation,
+      </if>
+      <if test="phone != null and phone != ''">
+        phone,
+      </if>
+      <if test="email != null and email != ''">
+        email,
+      </if>
+      <if test="address != null and address != ''">
+        address,
+      </if>
+      <if test="information != null and information != ''">
+        information,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="password != null and password != ''">
+        #{password},
+      </if>
+      <if test="username != null and username != ''">
+        #{username},
+      </if>
+      <if test="sex != null and sex != ''">
+        #{sex},
+      </if>
+      <if test="age != null and age != ''">
+        #{age},
+      </if>
+      <if test="birthday != null and birthday != ''">
+        #{birthday},
+      </if>
+      <if test="nation != null and nation != ''">
+        #{nation},
+      </if>
+      <if test="phone != null and phone != ''">
+        #{phone},
+      </if>
+      <if test="email != null and email != ''">
+        #{email},
+      </if>
+      <if test="address != null and address != ''">
+        #{address},
+      </if>
+      <if test="information != null and information != ''">
+        #{information},
+      </if>
+    </trim>
+  </insert>
+  <select id="getLastInsertID" resultType="Integer">
+      select  LAST_INSERT_ID()
+  </select>
+</mapper>

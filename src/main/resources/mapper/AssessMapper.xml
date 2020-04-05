@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.ssm.dao.AssessMapper">
+  <resultMap id="BaseResultMap" type="com.yxy.ssm.model.Assess">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="anony" jdbcType="BIT" property="anony" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="agree" jdbcType="INTEGER" property="agree" />
+    <result column="disagree" jdbcType="INTEGER" property="disagree" />
+    <result column="flag" jdbcType="BIT" property="flag" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yxy.ssm.model.Assess">
+    <result column="information" jdbcType="LONGVARCHAR" property="information" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user, anony, rank, agree, disagree, flag
+  </sql>
+  <sql id="Blob_Column_List">
+    information
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from assess
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from assess
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yxy.ssm.model.Assess">
+    insert into assess (id, user, anony, 
+      rank, agree, disagree, 
+      flag, information)
+    values (#{id,jdbcType=INTEGER}, #{user,jdbcType=INTEGER}, #{anony,jdbcType=BIT}, 
+      #{rank,jdbcType=INTEGER}, #{agree,jdbcType=INTEGER}, #{disagree,jdbcType=INTEGER}, 
+      #{flag,jdbcType=BIT}, #{information,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yxy.ssm.model.Assess">
+    insert into assess
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="anony != null">
+        anony,
+      </if>
+      <if test="rank != null">
+        rank,
+      </if>
+      <if test="agree != null">
+        agree,
+      </if>
+      <if test="disagree != null">
+        disagree,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+      <if test="information != null">
+        information,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="anony != null">
+        #{anony,jdbcType=BIT},
+      </if>
+      <if test="rank != null">
+        #{rank,jdbcType=INTEGER},
+      </if>
+      <if test="agree != null">
+        #{agree,jdbcType=INTEGER},
+      </if>
+      <if test="disagree != null">
+        #{disagree,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=BIT},
+      </if>
+      <if test="information != null">
+        #{information,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yxy.ssm.model.Assess">
+    update assess
+    <set>
+      <if test="user != null">
+        user = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="anony != null">
+        anony = #{anony,jdbcType=BIT},
+      </if>
+      <if test="rank != null">
+        rank = #{rank,jdbcType=INTEGER},
+      </if>
+      <if test="agree != null">
+        agree = #{agree,jdbcType=INTEGER},
+      </if>
+      <if test="disagree != null">
+        disagree = #{disagree,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        flag = #{flag,jdbcType=BIT},
+      </if>
+      <if test="information != null">
+        information = #{information,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.yxy.ssm.model.Assess">
+    update assess
+    set user = #{user,jdbcType=INTEGER},
+      anony = #{anony,jdbcType=BIT},
+      rank = #{rank,jdbcType=INTEGER},
+      agree = #{agree,jdbcType=INTEGER},
+      disagree = #{disagree,jdbcType=INTEGER},
+      flag = #{flag,jdbcType=BIT},
+      information = #{information,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yxy.ssm.model.Assess">
+    update assess
+    set user = #{user,jdbcType=INTEGER},
+      anony = #{anony,jdbcType=BIT},
+      rank = #{rank,jdbcType=INTEGER},
+      agree = #{agree,jdbcType=INTEGER},
+      disagree = #{disagree,jdbcType=INTEGER},
+      flag = #{flag,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.ssm.dao.DiseaseMapper">
+  <resultMap id="BaseResultMap" type="com.yxy.ssm.model.Disease">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="begindate" jdbcType="DATE" property="begindate" />
+    <result column="enddate" jdbcType="DATE" property="enddate" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="medicine" jdbcType="VARCHAR" property="medicine" />
+    <result column="hospital" jdbcType="INTEGER" property="hospital" />
+    <result column="doctor" jdbcType="VARCHAR" property="doctor" />
+    <result column="flag" jdbcType="BIT" property="flag" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yxy.ssm.model.Disease">
+    <result column="information" jdbcType="LONGVARCHAR" property="information" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, begindate, enddate, title, user, medicine, hospital, doctor, flag
+  </sql>
+  <sql id="Blob_Column_List">
+    information
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from disease
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from disease
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yxy.ssm.model.Disease">
+    insert into disease (id, begindate, enddate, 
+      title, user, medicine, 
+      hospital, doctor, flag, 
+      information)
+    values (#{id,jdbcType=INTEGER}, #{begindate,jdbcType=DATE}, #{enddate,jdbcType=DATE}, 
+      #{title,jdbcType=VARCHAR}, #{user,jdbcType=INTEGER}, #{medicine,jdbcType=VARCHAR}, 
+      #{hospital,jdbcType=INTEGER}, #{doctor,jdbcType=VARCHAR}, #{flag,jdbcType=BIT}, 
+      #{information,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yxy.ssm.model.Disease">
+    insert into disease
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="begindate != null">
+        begindate,
+      </if>
+      <if test="enddate != null">
+        enddate,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="medicine != null">
+        medicine,
+      </if>
+      <if test="hospital != null">
+        hospital,
+      </if>
+      <if test="doctor != null">
+        doctor,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+      <if test="information != null">
+        information,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="begindate != null">
+        #{begindate,jdbcType=DATE},
+      </if>
+      <if test="enddate != null">
+        #{enddate,jdbcType=DATE},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="medicine != null">
+        #{medicine,jdbcType=VARCHAR},
+      </if>
+      <if test="hospital != null">
+        #{hospital,jdbcType=INTEGER},
+      </if>
+      <if test="doctor != null">
+        #{doctor,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=BIT},
+      </if>
+      <if test="information != null">
+        #{information,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yxy.ssm.model.Disease">
+    update disease
+    <set>
+      <if test="begindate != null">
+        begindate = #{begindate,jdbcType=DATE},
+      </if>
+      <if test="enddate != null">
+        enddate = #{enddate,jdbcType=DATE},
+      </if>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="user != null">
+        user = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="medicine != null">
+        medicine = #{medicine,jdbcType=VARCHAR},
+      </if>
+      <if test="hospital != null">
+        hospital = #{hospital,jdbcType=INTEGER},
+      </if>
+      <if test="doctor != null">
+        doctor = #{doctor,jdbcType=VARCHAR},
+      </if>
+      <if test="flag != null">
+        flag = #{flag,jdbcType=BIT},
+      </if>
+      <if test="information != null">
+        information = #{information,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.yxy.ssm.model.Disease">
+    update disease
+    set begindate = #{begindate,jdbcType=DATE},
+      enddate = #{enddate,jdbcType=DATE},
+      title = #{title,jdbcType=VARCHAR},
+      user = #{user,jdbcType=INTEGER},
+      medicine = #{medicine,jdbcType=VARCHAR},
+      hospital = #{hospital,jdbcType=INTEGER},
+      doctor = #{doctor,jdbcType=VARCHAR},
+      flag = #{flag,jdbcType=BIT},
+      information = #{information,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yxy.ssm.model.Disease">
+    update disease
+    set begindate = #{begindate,jdbcType=DATE},
+      enddate = #{enddate,jdbcType=DATE},
+      title = #{title,jdbcType=VARCHAR},
+      user = #{user,jdbcType=INTEGER},
+      medicine = #{medicine,jdbcType=VARCHAR},
+      hospital = #{hospital,jdbcType=INTEGER},
+      doctor = #{doctor,jdbcType=VARCHAR},
+      flag = #{flag,jdbcType=BIT}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

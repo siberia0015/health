@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 打印查询语句 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- mybatis别名定义 -->
+    <!--<typeAliases>
+        <typeAlias alias="clientinfo" type="com.fzu.edu.model.clientInfo"/>
+    </typeAliases>-->
+
+    <typeHandlers>
+        <package name="com.yxy.ssm.typehandler" />
+    </typeHandlers>
+
+    <!--<plugins>
+        <plugin interceptor="com.fzu.edu.utils.PageInterceptor">
+            <property name="databaseType" value="sqlServer"/>
+        </plugin>
+    </plugins>-->
+    <plugins>
+        <plugin interceptor="com.yxy.ssm.utils.SqlPrepareInterceptor">
+            <property name="databaseType" value="sqlServer"/>
+        </plugin>
+        <!--<plugin interceptor="com.fzu.edu.utils.SqlInsertInterceptor">
+            <property name="databaseType" value="sqlServer"/>
+        </plugin>-->
+    </plugins>
+
+
+</configuration>

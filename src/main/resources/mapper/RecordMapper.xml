@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.ssm.dao.RecordMapper">
+  <resultMap id="BaseResultMap" type="com.yxy.ssm.model.Record">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="date" jdbcType="DATE" property="date" />
+    <result column="weight" jdbcType="DOUBLE" property="weight" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="bust" jdbcType="DOUBLE" property="bust" />
+    <result column="waist" jdbcType="DOUBLE" property="waist" />
+    <result column="hip" jdbcType="DOUBLE" property="hip" />
+    <result column="pressure" jdbcType="VARCHAR" property="pressure" />
+    <result column="suger" jdbcType="VARCHAR" property="suger" />
+    <result column="fat" jdbcType="VARCHAR" property="fat" />
+    <result column="pulse" jdbcType="VARCHAR" property="pulse" />
+    <result column="lefteye" jdbcType="DOUBLE" property="lefteye" />
+    <result column="righteye" jdbcType="DOUBLE" property="righteye" />
+    <result column="sport" jdbcType="VARCHAR" property="sport" />
+    <result column="food" jdbcType="VARCHAR" property="food" />
+    <result column="sleep" jdbcType="VARCHAR" property="sleep" />
+    <result column="skin" jdbcType="VARCHAR" property="skin" />
+    <result column="energy" jdbcType="VARCHAR" property="energy" />
+    <result column="pain" jdbcType="VARCHAR" property="pain" />
+    <result column="temperature" jdbcType="DOUBLE" property="temperature" />
+    <result column="spirit" jdbcType="VARCHAR" property="spirit" />
+    <result column="worktime" jdbcType="DOUBLE" property="worktime" />
+    <result column="goal" jdbcType="VARCHAR" property="goal" />
+    <result column="tips" jdbcType="VARCHAR" property="tips" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user, date, weight, height, bust, waist, hip, pressure, suger, fat, pulse, lefteye, 
+    righteye, sport, food, sleep, skin, energy, pain, temperature, spirit, worktime, 
+    goal, tips
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from record
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from record
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yxy.ssm.model.Record">
+    insert into record (id, user, date, 
+      weight, height, bust, 
+      waist, hip, pressure, 
+      suger, fat, pulse, 
+      lefteye, righteye, sport, 
+      food, sleep, skin, 
+      energy, pain, temperature, 
+      spirit, worktime, goal, 
+      tips)
+    values (#{id,jdbcType=INTEGER}, #{user,jdbcType=INTEGER}, #{date,jdbcType=DATE}, 
+      #{weight,jdbcType=DOUBLE}, #{height,jdbcType=DOUBLE}, #{bust,jdbcType=DOUBLE}, 
+      #{waist,jdbcType=DOUBLE}, #{hip,jdbcType=DOUBLE}, #{pressure,jdbcType=VARCHAR}, 
+      #{suger,jdbcType=VARCHAR}, #{fat,jdbcType=VARCHAR}, #{pulse,jdbcType=VARCHAR}, 
+      #{lefteye,jdbcType=DOUBLE}, #{righteye,jdbcType=DOUBLE}, #{sport,jdbcType=VARCHAR}, 
+      #{food,jdbcType=VARCHAR}, #{sleep,jdbcType=VARCHAR}, #{skin,jdbcType=VARCHAR}, 
+      #{energy,jdbcType=VARCHAR}, #{pain,jdbcType=VARCHAR}, #{temperature,jdbcType=DOUBLE}, 
+      #{spirit,jdbcType=VARCHAR}, #{worktime,jdbcType=DOUBLE}, #{goal,jdbcType=VARCHAR}, 
+      #{tips,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yxy.ssm.model.Record">
+    insert into record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="date != null">
+        date,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="height != null">
+        height,
+      </if>
+      <if test="bust != null">
+        bust,
+      </if>
+      <if test="waist != null">
+        waist,
+      </if>
+      <if test="hip != null">
+        hip,
+      </if>
+      <if test="pressure != null">
+        pressure,
+      </if>
+      <if test="suger != null">
+        suger,
+      </if>
+      <if test="fat != null">
+        fat,
+      </if>
+      <if test="pulse != null">
+        pulse,
+      </if>
+      <if test="lefteye != null">
+        lefteye,
+      </if>
+      <if test="righteye != null">
+        righteye,
+      </if>
+      <if test="sport != null">
+        sport,
+      </if>
+      <if test="food != null">
+        food,
+      </if>
+      <if test="sleep != null">
+        sleep,
+      </if>
+      <if test="skin != null">
+        skin,
+      </if>
+      <if test="energy != null">
+        energy,
+      </if>
+      <if test="pain != null">
+        pain,
+      </if>
+      <if test="temperature != null">
+        temperature,
+      </if>
+      <if test="spirit != null">
+        spirit,
+      </if>
+      <if test="worktime != null">
+        worktime,
+      </if>
+      <if test="goal != null">
+        goal,
+      </if>
+      <if test="tips != null">
+        tips,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=DATE},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="height != null">
+        #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="bust != null">
+        #{bust,jdbcType=DOUBLE},
+      </if>
+      <if test="waist != null">
+        #{waist,jdbcType=DOUBLE},
+      </if>
+      <if test="hip != null">
+        #{hip,jdbcType=DOUBLE},
+      </if>
+      <if test="pressure != null">
+        #{pressure,jdbcType=VARCHAR},
+      </if>
+      <if test="suger != null">
+        #{suger,jdbcType=VARCHAR},
+      </if>
+      <if test="fat != null">
+        #{fat,jdbcType=VARCHAR},
+      </if>
+      <if test="pulse != null">
+        #{pulse,jdbcType=VARCHAR},
+      </if>
+      <if test="lefteye != null">
+        #{lefteye,jdbcType=DOUBLE},
+      </if>
+      <if test="righteye != null">
+        #{righteye,jdbcType=DOUBLE},
+      </if>
+      <if test="sport != null">
+        #{sport,jdbcType=VARCHAR},
+      </if>
+      <if test="food != null">
+        #{food,jdbcType=VARCHAR},
+      </if>
+      <if test="sleep != null">
+        #{sleep,jdbcType=VARCHAR},
+      </if>
+      <if test="skin != null">
+        #{skin,jdbcType=VARCHAR},
+      </if>
+      <if test="energy != null">
+        #{energy,jdbcType=VARCHAR},
+      </if>
+      <if test="pain != null">
+        #{pain,jdbcType=VARCHAR},
+      </if>
+      <if test="temperature != null">
+        #{temperature,jdbcType=DOUBLE},
+      </if>
+      <if test="spirit != null">
+        #{spirit,jdbcType=VARCHAR},
+      </if>
+      <if test="worktime != null">
+        #{worktime,jdbcType=DOUBLE},
+      </if>
+      <if test="goal != null">
+        #{goal,jdbcType=VARCHAR},
+      </if>
+      <if test="tips != null">
+        #{tips,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yxy.ssm.model.Record">
+    update record
+    <set>
+      <if test="user != null">
+        user = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        date = #{date,jdbcType=DATE},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="height != null">
+        height = #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="bust != null">
+        bust = #{bust,jdbcType=DOUBLE},
+      </if>
+      <if test="waist != null">
+        waist = #{waist,jdbcType=DOUBLE},
+      </if>
+      <if test="hip != null">
+        hip = #{hip,jdbcType=DOUBLE},
+      </if>
+      <if test="pressure != null">
+        pressure = #{pressure,jdbcType=VARCHAR},
+      </if>
+      <if test="suger != null">
+        suger = #{suger,jdbcType=VARCHAR},
+      </if>
+      <if test="fat != null">
+        fat = #{fat,jdbcType=VARCHAR},
+      </if>
+      <if test="pulse != null">
+        pulse = #{pulse,jdbcType=VARCHAR},
+      </if>
+      <if test="lefteye != null">
+        lefteye = #{lefteye,jdbcType=DOUBLE},
+      </if>
+      <if test="righteye != null">
+        righteye = #{righteye,jdbcType=DOUBLE},
+      </if>
+      <if test="sport != null">
+        sport = #{sport,jdbcType=VARCHAR},
+      </if>
+      <if test="food != null">
+        food = #{food,jdbcType=VARCHAR},
+      </if>
+      <if test="sleep != null">
+        sleep = #{sleep,jdbcType=VARCHAR},
+      </if>
+      <if test="skin != null">
+        skin = #{skin,jdbcType=VARCHAR},
+      </if>
+      <if test="energy != null">
+        energy = #{energy,jdbcType=VARCHAR},
+      </if>
+      <if test="pain != null">
+        pain = #{pain,jdbcType=VARCHAR},
+      </if>
+      <if test="temperature != null">
+        temperature = #{temperature,jdbcType=DOUBLE},
+      </if>
+      <if test="spirit != null">
+        spirit = #{spirit,jdbcType=VARCHAR},
+      </if>
+      <if test="worktime != null">
+        worktime = #{worktime,jdbcType=DOUBLE},
+      </if>
+      <if test="goal != null">
+        goal = #{goal,jdbcType=VARCHAR},
+      </if>
+      <if test="tips != null">
+        tips = #{tips,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yxy.ssm.model.Record">
+    update record
+    set user = #{user,jdbcType=INTEGER},
+      date = #{date,jdbcType=DATE},
+      weight = #{weight,jdbcType=DOUBLE},
+      height = #{height,jdbcType=DOUBLE},
+      bust = #{bust,jdbcType=DOUBLE},
+      waist = #{waist,jdbcType=DOUBLE},
+      hip = #{hip,jdbcType=DOUBLE},
+      pressure = #{pressure,jdbcType=VARCHAR},
+      suger = #{suger,jdbcType=VARCHAR},
+      fat = #{fat,jdbcType=VARCHAR},
+      pulse = #{pulse,jdbcType=VARCHAR},
+      lefteye = #{lefteye,jdbcType=DOUBLE},
+      righteye = #{righteye,jdbcType=DOUBLE},
+      sport = #{sport,jdbcType=VARCHAR},
+      food = #{food,jdbcType=VARCHAR},
+      sleep = #{sleep,jdbcType=VARCHAR},
+      skin = #{skin,jdbcType=VARCHAR},
+      energy = #{energy,jdbcType=VARCHAR},
+      pain = #{pain,jdbcType=VARCHAR},
+      temperature = #{temperature,jdbcType=DOUBLE},
+      spirit = #{spirit,jdbcType=VARCHAR},
+      worktime = #{worktime,jdbcType=DOUBLE},
+      goal = #{goal,jdbcType=VARCHAR},
+      tips = #{tips,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <insert id="addRecord" parameterType="Map">
+    insert into record
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="user != null and user != ''">
+        user,
+      </if>
+      <if test="date != null">
+        date,
+      </if>
+      <if test="weight != null and weight != ''">
+        weight,
+      </if>
+      <if test="height != null and height != ''">
+        height,
+      </if>
+      <if test="bust != null and bust != ''">
+        bust,
+      </if>
+      <if test="waist != null and waist != ''">
+        waist,
+      </if>
+      <if test="hip != null and hip != ''">
+        hip,
+      </if>
+      <if test="pressure != null and pressure != ''">
+        pressure,
+      </if>
+      <if test="suger != null and suger != ''">
+        suger,
+      </if>
+      <if test="fat != null and fat != ''">
+        fat,
+      </if>
+      <if test="pulse != null and pulse != ''">
+        pulse,
+      </if>
+      <if test="lefteye != null and lefteye != ''">
+        lefteye,
+      </if>
+      <if test="righteye != null and righteye != ''">
+        righteye,
+      </if>
+      <if test="sport != null and sport != ''">
+        sport,
+      </if>
+      <if test="food != null and food != ''">
+        food,
+      </if>
+      <if test="sleep != null and sleep != ''">
+        sleep,
+      </if>
+      <if test="skin != null and skin != ''">
+        skin,
+      </if>
+      <if test="energy != null and energy != ''">
+        energy,
+      </if>
+      <if test="pain != null and pain != ''">
+        pain,
+      </if>
+      <if test="temperature != null and temperature != ''">
+        temperature,
+      </if>
+      <if test="spirit != null and spirit != ''">
+        spirit,
+      </if>
+      <if test="worktime != null and worktime != ''">
+        worktime,
+      </if>
+      <if test="goal != null and goal != ''">
+        goal,
+      </if>
+      <if test="tips != null and tips != ''">
+        tips,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="user != null and user != ''">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=DATE},
+      </if>
+      <if test="weight != null and weight != ''">
+        #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="height != null and height != ''">
+        #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="bust != null and bust != ''">
+        #{bust,jdbcType=DOUBLE},
+      </if>
+      <if test="waist != null and waist != ''">
+        #{waist,jdbcType=DOUBLE},
+      </if>
+      <if test="hip != null and hip != ''">
+        #{hip,jdbcType=DOUBLE},
+      </if>
+      <if test="pressure != null and pressure != ''">
+        #{pressure,jdbcType=VARCHAR},
+      </if>
+      <if test="suger != null and suger != ''">
+        #{suger,jdbcType=VARCHAR},
+      </if>
+      <if test="fat != null and fat != ''">
+        #{fat,jdbcType=VARCHAR},
+      </if>
+      <if test="pulse != null and pulse != ''">
+        #{pulse,jdbcType=VARCHAR},
+      </if>
+      <if test="lefteye != null and lefteye != ''">
+        #{lefteye,jdbcType=DOUBLE},
+      </if>
+      <if test="righteye != null and righteye != ''">
+        #{righteye,jdbcType=DOUBLE},
+      </if>
+      <if test="sport != null and sport != ''">
+        #{sport,jdbcType=VARCHAR},
+      </if>
+      <if test="food != null and food != ''">
+        #{food,jdbcType=VARCHAR},
+      </if>
+      <if test="sleep != null and sleep != ''">
+        #{sleep,jdbcType=VARCHAR},
+      </if>
+      <if test="skin != null and skin != ''">
+        #{skin,jdbcType=VARCHAR},
+      </if>
+      <if test="energy != null and energy != ''">
+        #{energy,jdbcType=VARCHAR},
+      </if>
+      <if test="pain != null and pain != ''">
+        #{pain,jdbcType=VARCHAR},
+      </if>
+      <if test="temperature != null and temperature != ''">
+        #{temperature,jdbcType=DOUBLE},
+      </if>
+      <if test="spirit != null and spirit != ''">
+        #{spirit,jdbcType=VARCHAR},
+      </if>
+      <if test="worktime != null and worktime != ''">
+        #{worktime,jdbcType=DOUBLE},
+      </if>
+      <if test="goal != null and goal != ''">
+        #{goal,jdbcType=VARCHAR},
+      </if>
+      <if test="tips != null and tips != ''">
+        #{tips,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+    <select id="selectByDate" parameterType="Map" resultMap="BaseResultMap">
+        select *
+        from record
+        where user=#{userid} and date=#{date}
+    </select>
+</mapper>

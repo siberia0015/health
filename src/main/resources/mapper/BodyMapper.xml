@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yxy.ssm.dao.BodyMapper">
+  <resultMap id="BaseResultMap" type="com.yxy.ssm.model.Body">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user" jdbcType="INTEGER" property="user" />
+    <result column="weight" jdbcType="DOUBLE" property="weight" />
+    <result column="goalweight" jdbcType="DOUBLE" property="goalweight" />
+    <result column="goalweightdate" jdbcType="DATE" property="goalweightdate" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="bust" jdbcType="DOUBLE" property="bust" />
+    <result column="waist" jdbcType="DOUBLE" property="waist" />
+    <result column="hip" jdbcType="DOUBLE" property="hip" />
+    <result column="blood" jdbcType="VARCHAR" property="blood" />
+    <result column="pressure" jdbcType="VARCHAR" property="pressure" />
+    <result column="suger" jdbcType="VARCHAR" property="suger" />
+    <result column="fat" jdbcType="VARCHAR" property="fat" />
+    <result column="pulse" jdbcType="VARCHAR" property="pulse" />
+    <result column="lefteye" jdbcType="DOUBLE" property="lefteye" />
+    <result column="righteye" jdbcType="DOUBLE" property="righteye" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user, weight, goalweight, goalweightdate, height, bust, waist, hip, blood, pressure, 
+    suger, fat, pulse, lefteye, righteye
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from body
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from body
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.yxy.ssm.model.Body">
+    insert into body (id, user, weight, 
+      goalweight, goalweightdate, height, 
+      bust, waist, hip, blood, 
+      pressure, suger, fat, 
+      pulse, lefteye, righteye
+      )
+    values (#{id,jdbcType=INTEGER}, #{user,jdbcType=INTEGER}, #{weight,jdbcType=DOUBLE}, 
+      #{goalweight,jdbcType=DOUBLE}, #{goalweightdate,jdbcType=DATE}, #{height,jdbcType=DOUBLE}, 
+      #{bust,jdbcType=DOUBLE}, #{waist,jdbcType=DOUBLE}, #{hip,jdbcType=DOUBLE}, #{blood,jdbcType=VARCHAR}, 
+      #{pressure,jdbcType=VARCHAR}, #{suger,jdbcType=VARCHAR}, #{fat,jdbcType=VARCHAR}, 
+      #{pulse,jdbcType=VARCHAR}, #{lefteye,jdbcType=DOUBLE}, #{righteye,jdbcType=DOUBLE}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yxy.ssm.model.Body">
+    insert into body
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="weight != null">
+        weight,
+      </if>
+      <if test="goalweight != null">
+        goalweight,
+      </if>
+      <if test="goalweightdate != null">
+        goalweightdate,
+      </if>
+      <if test="height != null">
+        height,
+      </if>
+      <if test="bust != null">
+        bust,
+      </if>
+      <if test="waist != null">
+        waist,
+      </if>
+      <if test="hip != null">
+        hip,
+      </if>
+      <if test="blood != null">
+        blood,
+      </if>
+      <if test="pressure != null">
+        pressure,
+      </if>
+      <if test="suger != null">
+        suger,
+      </if>
+      <if test="fat != null">
+        fat,
+      </if>
+      <if test="pulse != null">
+        pulse,
+      </if>
+      <if test="lefteye != null">
+        lefteye,
+      </if>
+      <if test="righteye != null">
+        righteye,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="goalweight != null">
+        #{goalweight,jdbcType=DOUBLE},
+      </if>
+      <if test="goalweightdate != null">
+        #{goalweightdate,jdbcType=DATE},
+      </if>
+      <if test="height != null">
+        #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="bust != null">
+        #{bust,jdbcType=DOUBLE},
+      </if>
+      <if test="waist != null">
+        #{waist,jdbcType=DOUBLE},
+      </if>
+      <if test="hip != null">
+        #{hip,jdbcType=DOUBLE},
+      </if>
+      <if test="blood != null">
+        #{blood,jdbcType=VARCHAR},
+      </if>
+      <if test="pressure != null">
+        #{pressure,jdbcType=VARCHAR},
+      </if>
+      <if test="suger != null">
+        #{suger,jdbcType=VARCHAR},
+      </if>
+      <if test="fat != null">
+        #{fat,jdbcType=VARCHAR},
+      </if>
+      <if test="pulse != null">
+        #{pulse,jdbcType=VARCHAR},
+      </if>
+      <if test="lefteye != null">
+        #{lefteye,jdbcType=DOUBLE},
+      </if>
+      <if test="righteye != null">
+        #{righteye,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yxy.ssm.model.Body">
+    update body
+    <set>
+      <if test="user != null">
+        user = #{user,jdbcType=INTEGER},
+      </if>
+      <if test="weight != null">
+        weight = #{weight,jdbcType=DOUBLE},
+      </if>
+      <if test="goalweight != null">
+        goalweight = #{goalweight,jdbcType=DOUBLE},
+      </if>
+      <if test="goalweightdate != null">
+        goalweightdate = #{goalweightdate,jdbcType=DATE},
+      </if>
+      <if test="height != null">
+        height = #{height,jdbcType=DOUBLE},
+      </if>
+      <if test="bust != null">
+        bust = #{bust,jdbcType=DOUBLE},
+      </if>
+      <if test="waist != null">
+        waist = #{waist,jdbcType=DOUBLE},
+      </if>
+      <if test="hip != null">
+        hip = #{hip,jdbcType=DOUBLE},
+      </if>
+      <if test="blood != null">
+        blood = #{blood,jdbcType=VARCHAR},
+      </if>
+      <if test="pressure != null">
+        pressure = #{pressure,jdbcType=VARCHAR},
+      </if>
+      <if test="suger != null">
+        suger = #{suger,jdbcType=VARCHAR},
+      </if>
+      <if test="fat != null">
+        fat = #{fat,jdbcType=VARCHAR},
+      </if>
+      <if test="pulse != null">
+        pulse = #{pulse,jdbcType=VARCHAR},
+      </if>
+      <if test="lefteye != null">
+        lefteye = #{lefteye,jdbcType=DOUBLE},
+      </if>
+      <if test="righteye != null">
+        righteye = #{righteye,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yxy.ssm.model.Body">
+    update body
+    set user = #{user,jdbcType=INTEGER},
+      weight = #{weight,jdbcType=DOUBLE},
+      goalweight = #{goalweight,jdbcType=DOUBLE},
+      goalweightdate = #{goalweightdate,jdbcType=DATE},
+      height = #{height,jdbcType=DOUBLE},
+      bust = #{bust,jdbcType=DOUBLE},
+      waist = #{waist,jdbcType=DOUBLE},
+      hip = #{hip,jdbcType=DOUBLE},
+      blood = #{blood,jdbcType=VARCHAR},
+      pressure = #{pressure,jdbcType=VARCHAR},
+      suger = #{suger,jdbcType=VARCHAR},
+      fat = #{fat,jdbcType=VARCHAR},
+      pulse = #{pulse,jdbcType=VARCHAR},
+      lefteye = #{lefteye,jdbcType=DOUBLE},
+      righteye = #{righteye,jdbcType=DOUBLE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+    <select id="selectByUser" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select *
+    from body
+    where user = #{userid,jdbcType=INTEGER}
+  </select>
+    <insert id="addOriginInfo" parameterType="java.lang.Integer">
+      insert into body(user)
+      values (#{userid})
+    </insert>
+    <update id="updateByUser" parameterType="Map">
+        update body
+        <set>
+            <if test="weight != null and weight != ''">
+                weight = #{weight,jdbcType=DOUBLE},
+            </if>
+            <if test="goalweight != null and goalweight != ''">
+                goalweight = #{goalweight,jdbcType=DOUBLE},
+            </if>
+            <if test="goalweightdate != null and goalweightdate != ''">
+                goalweightdate = #{goalweightdate,jdbcType=DATE},
+            </if>
+            <if test="height != null and height != ''">
+                height = #{height,jdbcType=DOUBLE},
+            </if>
+            <if test="bust != null and bust != ''">
+                bust = #{bust,jdbcType=DOUBLE},
+            </if>
+            <if test="waist != null and waist != ''">
+                waist = #{waist,jdbcType=DOUBLE},
+            </if>
+            <if test="hip != null and hip != ''">
+                hip = #{hip,jdbcType=DOUBLE},
+            </if>
+            <if test="blood != null and blood != ''">
+                blood = #{blood,jdbcType=VARCHAR},
+            </if>
+            <if test="pressure != null and pressure != ''">
+                pressure = #{pressure,jdbcType=VARCHAR},
+            </if>
+            <if test="suger != null and suger != ''">
+                suger = #{suger,jdbcType=VARCHAR},
+            </if>
+            <if test="fat != null and fat != ''">
+                fat = #{fat,jdbcType=VARCHAR},
+            </if>
+            <if test="pulse != null and pulse != ''">
+                pulse = #{pulse,jdbcType=VARCHAR},
+            </if>
+            <if test="lefteye != null and lefteye != ''">
+                lefteye = #{lefteye,jdbcType=DOUBLE},
+            </if>
+            <if test="righteye != null and righteye != ''">
+                righteye = #{righteye,jdbcType=DOUBLE},
+            </if>
+        </set>
+        where user = #{userid,jdbcType=INTEGER}
+    </update>
+</mapper>
