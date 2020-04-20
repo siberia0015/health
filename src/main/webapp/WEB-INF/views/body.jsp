@@ -14,7 +14,7 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/RefResources/layui/css/layui.css"><!--引入layui文件-->
+    <%--<link rel="stylesheet" href="${pageContext.request.contextPath}/RefResources/layui/css/layui.css">--%><!--引入layui文件-->
 </head>
 <body>
 <blockquote class="layui-elem-quote">
@@ -122,7 +122,7 @@
     </table>
 </div>
 
-<script src="${pageContext.request.contextPath}/RefResources/layui/layui.js"></script>
+<%--<script src="${pageContext.request.contextPath}/RefResources/layui/layui.js"></script>--%>
 <script>
 
 </script>

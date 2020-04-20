@@ -9,6 +9,36 @@ public class Hospital {
 
     private String information;
 
+    private String address;
+
+    private String link;
+
+    private String website;
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public Integer getId() {
         return id;
     }

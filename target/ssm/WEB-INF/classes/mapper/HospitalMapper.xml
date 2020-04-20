@@ -4,13 +4,16 @@
   <resultMap id="BaseResultMap" type="com.yxy.ssm.model.Hospital">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="place" jdbcType="INTEGER" property="place" />
+    <result column="place" jdbcType="VARCHAR" property="place" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="link" jdbcType="VARCHAR" property="link" />
+    <result column="website" jdbcType="VARCHAR" property="website" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yxy.ssm.model.Hospital">
     <result column="information" jdbcType="LONGVARCHAR" property="information" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, name, place
+    id, name, place,address,link,website
   </sql>
   <sql id="Blob_Column_List">
     information
@@ -93,9 +96,12 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="selectByPlace" parameterType="Map" resultMap="BaseResultMap">
-      SELECT *
-      FROM hospital
+  <select id="selectByPlace" parameterType="Map" resultType="map">
+      SELECT hospital.id id,hospital.name name,place.name place,hospital.information information
+      FROM hospital left join place on hospital.place = place.id
       <if test="place != null and place != ''">WHERE place=#{place}</if>
+    <if test="start !=0 or limit!=0">
+      limit #{start},#{limit}
+    </if>
   </select>
 </mapper>

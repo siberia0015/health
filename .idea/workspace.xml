@@ -6,7 +6,87 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e77a6e67-1c85-4e95-9282-c92a0ff58841" name="Default" comment="" />
+    <list default="true" id="e77a6e67-1c85-4e95-9282-c92a0ff58841" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/AssessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/DiseaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/MedicalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/AssessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/AssessServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/DiseaseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/NoticeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/assessTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/diseaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/test/noticeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/make_assess.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice_detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userInfo_change.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/AssessMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/AssessMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/DiseaseMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Assess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Assess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Disease.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Hospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AssessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AssessMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DiseaseMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/HospitalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/HospitalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/hospitalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/hospitalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/dao/AssessMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/dao/AssessMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/dao/DiseaseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/dao/DiseaseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Assess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Assess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Disease.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Disease.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Hospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/model/Hospital.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/service/HospitalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/service/HospitalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yxy/ssm/service/impl/HospitalServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxy/ssm/service/impl/HospitalServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AssessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/AssessMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DiseaseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/DiseaseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/HospitalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/HospitalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/dao/AssessMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/dao/AssessMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/dao/DiseaseMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/dao/DiseaseMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Assess.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Assess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Disease.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Disease.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Hospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/model/Hospital.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/service/HospitalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/service/HospitalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/service/impl/HospitalServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/com/yxy/ssm/service/impl/HospitalServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/AssessMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/AssessMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/DiseaseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/DiseaseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/HospitalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/classes/mapper/HospitalMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/body.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/body.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/body_dailyRecord.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/body_dailyRecord.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/medical.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/medical.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/recommend.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/recommend.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/record.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/record.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/registSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/registSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ssm/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hospitalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hospitalTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,81 +165,135 @@
     <session id="-365038370">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="32" />
+          <entry key="project.closed" value="46" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.19" value="3" />
           <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.20" value="5" />
-          <entry key="project.open.time.21" value="4" />
-          <entry key="project.open.time.22" value="4" />
+          <entry key="project.open.time.20" value="6" />
+          <entry key="project.open.time.21" value="9" />
+          <entry key="project.open.time.22" value="8" />
           <entry key="project.open.time.24" value="2" />
-          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.25" value="3" />
           <entry key="project.open.time.27" value="2" />
-          <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.28" value="2" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="34" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="css" value="2" />
+          <entry key="css" value="3" />
           <entry key="html" value="32" />
           <entry key="iml" value="1" />
-          <entry key="java" value="231" />
+          <entry key="java" value="343" />
           <entry key="js" value="4" />
-          <entry key="jsp" value="184" />
-          <entry key="properties" value="5" />
+          <entry key="jsp" value="244" />
+          <entry key="properties" value="6" />
           <entry key="rnc" value="3" />
-          <entry key="xml" value="58" />
+          <entry key="xml" value="88" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="3" />
           <entry key="HTML" value="32" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="231" />
-          <entry key="JSP" value="184" />
+          <entry key="JAVA" value="343" />
+          <entry key="JSP" value="244" />
           <entry key="JavaScript" value="4" />
-          <entry key="Properties" value="5" />
+          <entry key="Properties" value="6" />
           <entry key="RNG Compact" value="3" />
-          <entry key="XML" value="59" />
+          <entry key="XML" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="57" />
-          <entry key="java" value="4774" />
-          <entry key="jsp" value="4805" />
+          <entry key="java" value="8024" />
+          <entry key="jsp" value="7625" />
           <entry key="properties" value="6" />
-          <entry key="xml" value="1118" />
+          <entry key="xml" value="1955" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="57" />
-          <entry key="JAVA" value="4774" />
-          <entry key="JSP" value="4805" />
+          <entry key="JAVA" value="8024" />
+          <entry key="JSP" value="7625" />
           <entry key="Properties" value="6" />
-          <entry key="SQL" value="20" />
-          <entry key="XML" value="1098" />
+          <entry key="SQL" value="40" />
+          <entry key="XML" value="1915" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+            <state relative-caret-position="383">
+              <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="14" column="95" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical_detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/DiseaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/test/diseaseTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1338#1339#0" expanded="true" />
+                <element signature="e#1367#1368#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,65 +319,69 @@
       <find>com.liu</find>
       <find>logout</find>
       <find>BODY</find>
+      <find>hospital</find>
     </findStrings>
     <replaceStrings>
       <replace>com.yxy</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medicalInformation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/test/bodyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/PlaceMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/test/userTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/healthRecord.jsp" />
-        <option value="$PROJECT_DIR$/src/main/test/placeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/BodyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/BodyMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/BodyMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/BodyServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/test/bodyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/RecordMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/RecordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/RecordServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/RecordMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/HospitalMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/HospitalMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/test/hospitalTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registFail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/routeRecord.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_1.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newhome.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newr.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newbody.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_changeInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/BodyController.java" />
         <option value="$PROJECT_DIR$/src/main/test/recordTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/RecordController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/newRecord.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/new_index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/userInfo_change.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/HospitalMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/hospitalTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/HospitalMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Hospital.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/model/Assess.java" />
+        <option value="$PROJECT_DIR$/src/main/test/assessTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/make_assess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/AssessMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/AssessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/AssessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/AssessController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/AssessMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/NoticeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/NoticeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/test/noticeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/NoticeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/NoticeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/NoticeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice_detail.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/DiseaseMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/MedicalController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/DiseaseMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/DiseaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/DiseaseServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/test/diseaseTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/DiseaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_detail.jsp" />
       </list>
     </option>
   </component>
@@ -293,8 +431,8 @@
     <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="276" />
-    <option name="y" value="122" />
+    <option name="x" value="419" />
+    <option name="y" value="3" />
     <option name="width" value="1007" />
     <option name="height" value="738" />
   </component>
@@ -347,6 +485,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -394,6 +534,15 @@
               <item name="ssm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ssm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -424,33 +573,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="RefResources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="RefResources" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="RefResources" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,8 +588,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -480,7 +600,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com.liu.ssm.dao" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../userManagement" />
+    <property name="last_opened_file_path" value="E:/rgzs1/trunk" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
@@ -538,27 +658,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="databaseTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="databaseTest" />
+      <module name="ssm" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bodyTest.addOriginInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="diseaseTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="bodyTest" />
-      <option name="METHOD_NAME" value="addOriginInfo" />
+      <option name="MAIN_CLASS_NAME" value="diseaseTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bodyTest.selectByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="diseaseTest.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="bodyTest" />
+      <option name="MAIN_CLASS_NAME" value="diseaseTest" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="diseaseTest.selectByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssm" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="diseaseTest" />
       <option name="METHOD_NAME" value="selectByUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -566,33 +705,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="bodyTest.updateByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="noticeTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ssm" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="bodyTest" />
-      <option name="METHOD_NAME" value="updateByUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="hospitalTest.selectByPlace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ssm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="hospitalTest" />
-      <option name="METHOD_NAME" value="selectByPlace" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="recordTest.addRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ssm" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="recordTest" />
-      <option name="METHOD_NAME" value="addRecord" />
+      <option name="MAIN_CLASS_NAME" value="noticeTest" />
+      <option name="METHOD_NAME" value="getAll" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -710,19 +827,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.ssm" />
-      <item itemvalue="JUnit.bodyTest.selectByUser" />
-      <item itemvalue="JUnit.bodyTest.updateByUser" />
-      <item itemvalue="JUnit.bodyTest.addOriginInfo" />
-      <item itemvalue="JUnit.recordTest.addRecord" />
-      <item itemvalue="JUnit.hospitalTest.selectByPlace" />
+      <item itemvalue="Application.databaseTest" />
+      <item itemvalue="JUnit.noticeTest.getAll" />
+      <item itemvalue="JUnit.diseaseTest.add" />
+      <item itemvalue="JUnit.diseaseTest.selectByUser" />
+      <item itemvalue="JUnit.diseaseTest.delete" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.hospitalTest.selectByPlace" />
-        <item itemvalue="JUnit.recordTest.addRecord" />
-        <item itemvalue="JUnit.bodyTest.addOriginInfo" />
-        <item itemvalue="JUnit.bodyTest.updateByUser" />
-        <item itemvalue="JUnit.bodyTest.selectByUser" />
+        <item itemvalue="JUnit.diseaseTest.delete" />
+        <item itemvalue="JUnit.diseaseTest.selectByUser" />
+        <item itemvalue="JUnit.diseaseTest.add" />
+        <item itemvalue="Application.databaseTest" />
+        <item itemvalue="JUnit.noticeTest.getAll" />
       </list>
     </recent_temporary>
   </component>
@@ -780,50 +897,63 @@
       <workItem from="1585634180499" duration="478000" />
       <workItem from="1585721515991" duration="99000" />
       <workItem from="1585730145476" duration="1309000" />
-      <workItem from="1586092381839" duration="657000" />
+      <workItem from="1586092381839" duration="1253000" />
+      <workItem from="1586185184679" duration="3458000" />
+      <workItem from="1586253454149" duration="2884000" />
+      <workItem from="1586357654812" duration="3287000" />
+      <workItem from="1586361248041" duration="6410000" />
+      <workItem from="1586445693225" duration="4411000" />
+      <workItem from="1586527366927" duration="4795000" />
+      <workItem from="1586612308927" duration="8900000" />
+      <workItem from="1586701708419" duration="8357000" />
+      <workItem from="1586789962446" duration="4614000" />
+      <workItem from="1586873938528" duration="942000" />
+      <workItem from="1586937902306" duration="1467000" />
+      <workItem from="1587307303339" duration="4346000" />
+      <workItem from="1587389573770" duration="10837000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="bodyTest_updateByUser - 2020.03.21 at 01h 16m 40s.xml">
-      <configuration name="bodyTest.updateByUser" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 27m 24s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="bodyTest_updateByUser - 2020.03.21 at 01h 22m 33s.xml">
-      <configuration name="bodyTest.updateByUser" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 40m 21s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="bodyTest_updateByUser - 2020.03.21 at 01h 23m 50s.xml">
-      <configuration name="bodyTest.updateByUser" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 50m 40s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="bodyTest_addOriginInfo - 2020.03.24 at 00h 20m 45s.xml">
-      <configuration name="bodyTest.addOriginInfo" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 51m 53s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="bodyTest_addOriginInfo - 2020.03.24 at 00h 21m 55s.xml">
-      <configuration name="bodyTest.addOriginInfo" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 52m 39s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="recordTest_addRecord - 2020.03.24 at 00h 40m 58s.xml">
-      <configuration name="recordTest.addRecord" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 53m 38s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="hospitalTest_selectByPlace - 2020.03.27 at 00h 01m 05s.xml">
-      <configuration name="hospitalTest.selectByPlace" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 54m 55s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="hospitalTest_selectByPlace - 2020.03.27 at 00h 03m 45s.xml">
-      <configuration name="hospitalTest.selectByPlace" configurationId="JUnit" />
+    <history-entry file="diseaseTest_selectByUser - 2020.04.20 at 22h 55m 52s.xml">
+      <configuration name="diseaseTest.selectByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="hospitalTest_selectByPlace - 2020.03.28 at 00h 10m 26s.xml">
-      <configuration name="hospitalTest.selectByPlace" configurationId="JUnit" />
+    <history-entry file="diseaseTest_delete - 2020.04.21 at 00h 09m 38s.xml">
+      <configuration name="diseaseTest.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="hospitalTest_selectByPlace - 2020.03.28 at 00h 12m 10s.xml">
-      <configuration name="hospitalTest.selectByPlace" configurationId="JUnit" />
+    <history-entry file="diseaseTest_delete - 2020.04.21 at 00h 10m 30s.xml">
+      <configuration name="diseaseTest.delete" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226098000" />
+    <option name="totallyTimeSpent" value="291402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239584" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239584" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -834,7 +964,7 @@
       <window_info id="设计器" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32910052" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.27195767" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4969743" weight="0.42161018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45210084" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -843,9 +973,9 @@
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5030257" side_tool="true" weight="0.4117647" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32910052" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32838982" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32941177" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="JProfiler" order="14" />
       <window_info anchor="bottom" id="Database Changes" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="调试" order="16" weight="0.32910052" />
@@ -872,132 +1002,470 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/userTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/PlaceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/BodyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BodyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="235" column="36" selection-start-line="235" selection-start-column="36" selection-end-line="235" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/RecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/RecordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/OrganizationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/BodyService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        <state relative-caret-position="104">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/BodyServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_changeInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+        <state relative-caret-position="-1206">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/bodyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/make_assess.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="83" />
+        <state relative-caret-position="-475">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/AssessMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="2" column="46" lean-forward="true" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        <state relative-caret-position="247">
+          <caret line="215" column="23" selection-start-line="215" selection-start-column="23" selection-end-line="215" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/assessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/placeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="76">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/hospitalTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/NoticeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="200">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/NoticeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="97" selection-start-line="97" selection-end-line="102" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/databaseTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="50" column="60" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/AssessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/AssessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AssessMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="186" column="38" selection-start-line="186" selection-start-column="19" selection-end-line="186" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/bodyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/noticeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/AssessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/BodyController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="156">
+          <caret line="45" column="71" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="59" />
+        <state relative-caret-position="387">
+          <caret line="61" column="48" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="219" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/HospitalMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        <state relative-caret-position="110">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/HospitalServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" selection-start-line="18" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/HospitalService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="9" column="62" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HospitalMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
+        <state relative-caret-position="1004">
+          <caret line="104" column="9" lean-forward="true" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/RecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/RecordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/recordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="34" column="51" lean-forward="true" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding>
+            <element signature="e#1180#1195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RecordMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="482" column="19" lean-forward="true" selection-start-line="482" selection-start-column="19" selection-end-line="482" selection-end-column="19" />
+          <folding>
+            <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
+            <element signature="n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#0;n#mapper#0;n#!!top" />
+            <element signature="e#5#71#0" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="e#5#61#0" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="e#5#998#0" />
+            <element signature="n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#10;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#11;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#12;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#13;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#14;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#15;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#16;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#17;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#18;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#19;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#20;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#21;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#22;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#23;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#24;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#10;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#11;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#12;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#13;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#14;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#15;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#16;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#17;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#18;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#19;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#20;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#21;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#22;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#23;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#24;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="e#5#1440#0" />
+            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#10;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#11;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#12;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#13;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#14;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#15;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#16;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#17;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#18;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#19;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#20;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#21;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#22;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#23;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#1;n#mapper#0;n#!!top" />
+            <element signature="e#5#1047#0" />
+            <element signature="n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#10;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#11;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#12;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#13;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#14;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#15;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#16;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#17;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#18;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#19;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#20;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#21;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#22;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#23;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#10;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#11;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#12;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#13;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#14;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#15;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#16;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#17;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#18;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#19;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#20;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#21;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#22;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#23;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/dao/DiseaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/MedicalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/RecordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="39" column="69" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/NoticeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="61" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/NoticeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/NoticeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="60" column="77" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/notice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="60" column="11" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="60" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DiseaseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="232" column="64" selection-start-line="232" selection-start-column="64" selection-end-line="232" selection-end-column="64" />
           <folding>
             <element signature="n#resultMap#0;n#mapper#0;n#!!top" />
             <element signature="n#resultMap#1;n#mapper#0;n#!!top" />
@@ -1012,228 +1480,129 @@
             <element signature="n#if#1;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#2;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#3;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#0;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#1;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#2;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#if#3;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
+            <element signature="n#if#9;n#trim#1;n#insert#1;n#mapper#0;n#!!top" />
             <element signature="n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#1;n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#if#2;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#set#0;n#update#0;n#mapper#0;n#!!top" />
             <element signature="n#update#1;n#mapper#0;n#!!top" />
             <element signature="n#update#2;n#mapper#0;n#!!top" />
+            <element signature="n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#0;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#trim#1;n#insert#2;n#mapper#0;n#!!top" />
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/RefResources/layui/layui.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/DiseaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/recommend.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registFail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/routeRecord.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="130" selection-start-line="130" selection-end-line="130" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/RefResources/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="288" selection-start-line="1" selection-start-column="288" selection-end-line="1" selection-end-column="288" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms2.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/regist.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_1.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_changeInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1184">
-          <caret line="110" column="86" selection-start-line="110" selection-start-column="86" selection-end-line="110" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/BodyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="78" column="58" selection-start-line="78" selection-start-column="58" selection-end-line="78" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_2.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="186" column="8" selection-start-line="186" selection-start-column="8" selection-end-line="186" selection-end-column="60" />
-          <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="58" column="40" lean-forward="true" selection-end-line="155" />
-          <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/RecordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/recordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="286">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RecordMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/service/impl/DiseaseServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="483" column="18" selection-start-line="483" selection-start-column="18" selection-end-line="483" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/RecordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="22" column="100" selection-start-line="22" selection-start-column="100" selection-end-line="22" selection-end-column="100" />
+        <state relative-caret-position="63">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
           <folding>
-            <element signature="n#!!doc;n#jsp:root#0;n#!!top" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#542#543#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/record.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/test/diseaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="107" column="14" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="14" />
+        <state relative-caret-position="343">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1338#1339#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/body_dailyRecord.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxy/ssm/controller/DiseaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+        <state relative-caret-position="261">
+          <caret line="85" column="12" selection-start-line="85" selection-start-column="12" selection-end-line="85" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="95" column="56" selection-start-line="95" selection-start-column="56" selection-end-line="95" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/medical_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="14" column="95" selection-start-line="14" selection-start-column="91" selection-end-line="14" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disease_detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
         </state>
       </provider>
     </entry>

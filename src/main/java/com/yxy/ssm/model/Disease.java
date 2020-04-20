@@ -15,7 +15,7 @@ public class Disease {
 
     private String medicine;
 
-    private Integer hospital;
+    private String hospital;
 
     private String doctor;
 
@@ -71,12 +71,12 @@ public class Disease {
         this.medicine = medicine == null ? null : medicine.trim();
     }
 
-    public Integer getHospital() {
+    public String getHospital() {
         return hospital;
     }
 
-    public void setHospital(Integer hospital) {
-        this.hospital = hospital;
+    public void setHospital(String hospital) {
+        this.hospital = hospital == null ? null : hospital.trim();
     }
 
     public String getDoctor() {

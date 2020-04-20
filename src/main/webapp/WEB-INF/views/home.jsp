@@ -22,14 +22,14 @@
         </div>
         <!-- 头部区域（可配合layui已有的水平导航） -->
         <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="javascript:;" data-href="/to/test">控制台</a></li>
-            <li class="layui-nav-item"><a href="">用户</a></li>
+            <li class="layui-nav-item"><a href="javascript:;" data-href="/to/new_index">控制台*</a></li>
+            <li class="layui-nav-item"><a href="javascript:;" data-href="/to/userInfo">用户</a></li>
             <li class="layui-nav-item">
-                <a href="javascript:;">其它</a>
+                <a href="javascript:;">其它*</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="">邮件管理</a></dd>
-                    <dd><a href="">消息管理</a></dd>
-                    <dd><a href="">授权管理</a></dd>
+                    <dd><a href="">邮件管理*</a></dd>
+                    <dd><a href="">消息管理*</a></dd>
+                    <dd><a href="">授权管理*</a></dd>
                 </dl>
             </li>
         </ul>
@@ -40,8 +40,8 @@
                     ${sessionScope.SESSION_USERNAME}
                 </a>
                 <dl class="layui-nav-child">
-                    <dd><a href="">基本资料</a></dd>
-                    <dd><a href="">安全设置</a></dd>
+                    <dd><a href="javascript:;" data-href="/to/userInfo">基本资料</a></dd>
+                    <dd><a href="">安全设置*</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item"><a href="/user/logout">退出登陆</a></li>
@@ -58,21 +58,21 @@
                         <dd><a href="javascript:;" data-href="/body/getInfo">身体状况</a></dd>
                         <%--<dd><a href="javascript:;" data-href="/to/record">历史记录</a></dd>--%>
                         <dd><a href="javascript:;" data-href="/to/body_dailyRecord">每日记录</a></dd>
-                        <dd><a href="javascript:;">病情记录</a></dd>
-                        <dd><a href="javascript:;">行程记录</a></dd>
+                        <dd><a href="javascript:;" data-href="/to/disease">病情记录</a></dd>
+                        <dd><a href="javascript:;">行程记录*</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a href="javascript:;">我的团体</a>
+                    <a href="javascript:;">我的团体*</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">所属团体</a></dd>
-                        <dd><a href="javascript:;">讨论区</a></dd>
-                        <dd><a href="javascript:;">团体公告</a></dd>
+                        <dd><a href="javascript:;">所属团体*</a></dd>
+                        <dd><a href="javascript:;">讨论区*</a></dd>
+                        <dd><a href="javascript:;">团体公告*</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="javascript:;" data-href="/to/medical">医疗资源</a></li>
-                <li class="layui-nav-item"><a href="javascript:;" data-href="/to/recommend">推荐信息</a></li>
-                <li class="layui-nav-item"><a href="">网站公告</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" data-href="/to/recommend">推荐信息*</a></li>
+                <li class="layui-nav-item"><a href="javascript:;" data-href="/to/notice">网站公告</a></li>
             </ul>
         </div>
     </div>

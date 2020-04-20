@@ -184,7 +184,8 @@
 <div class="header" id="head">
     <div class="title">健康管理系统</div>
     <div style="float:right;">
-        <a class="layui-btn" href="/to/register">注     册</a>
+        <a class="layui-btn" href="/to/register">注    册</a>
+        <a class="layui-btn" href="/to/index">返回首页</a>
     </div>
 </div>
 <div class="wrap" id="wrap">

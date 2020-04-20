@@ -12,6 +12,5 @@
 </head>
 <body>
 <form action="/user/goHome"><input type="submit" value="返回"></input></form>
-<script src="${pageContext.request.contextPath}/RefResources/layui/layui.js"></script>
 </body>
 </html>

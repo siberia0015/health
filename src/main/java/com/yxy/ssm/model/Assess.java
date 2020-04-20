@@ -17,6 +17,16 @@ public class Assess {
 
     private String information;
 
+    private Integer hospital;
+
+    public Integer getHospital() {
+        return hospital;
+    }
+
+    public void setHospital(Integer hospital) {
+        this.hospital = hospital;
+    }
+
     public Integer getId() {
         return id;
     }

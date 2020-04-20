@@ -8,7 +8,7 @@
     <result column="title" jdbcType="VARCHAR" property="title" />
     <result column="user" jdbcType="INTEGER" property="user" />
     <result column="medicine" jdbcType="VARCHAR" property="medicine" />
-    <result column="hospital" jdbcType="INTEGER" property="hospital" />
+    <result column="hospital" jdbcType="VARCHAR" property="hospital" />
     <result column="doctor" jdbcType="VARCHAR" property="doctor" />
     <result column="flag" jdbcType="BIT" property="flag" />
   </resultMap>
@@ -40,7 +40,7 @@
       information)
     values (#{id,jdbcType=INTEGER}, #{begindate,jdbcType=DATE}, #{enddate,jdbcType=DATE}, 
       #{title,jdbcType=VARCHAR}, #{user,jdbcType=INTEGER}, #{medicine,jdbcType=VARCHAR}, 
-      #{hospital,jdbcType=INTEGER}, #{doctor,jdbcType=VARCHAR}, #{flag,jdbcType=BIT}, 
+      #{hospital,jdbcType=VARCHAR}, #{doctor,jdbcType=VARCHAR}, #{flag,jdbcType=BIT}, 
       #{information,jdbcType=LONGVARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.yxy.ssm.model.Disease">
@@ -97,7 +97,7 @@
         #{medicine,jdbcType=VARCHAR},
       </if>
       <if test="hospital != null">
-        #{hospital,jdbcType=INTEGER},
+        #{hospital,jdbcType=VARCHAR},
       </if>
       <if test="doctor != null">
         #{doctor,jdbcType=VARCHAR},
@@ -129,7 +129,7 @@
         medicine = #{medicine,jdbcType=VARCHAR},
       </if>
       <if test="hospital != null">
-        hospital = #{hospital,jdbcType=INTEGER},
+        hospital = #{hospital,jdbcType=VARCHAR},
       </if>
       <if test="doctor != null">
         doctor = #{doctor,jdbcType=VARCHAR},
@@ -150,7 +150,7 @@
       title = #{title,jdbcType=VARCHAR},
       user = #{user,jdbcType=INTEGER},
       medicine = #{medicine,jdbcType=VARCHAR},
-      hospital = #{hospital,jdbcType=INTEGER},
+      hospital = #{hospital,jdbcType=VARCHAR},
       doctor = #{doctor,jdbcType=VARCHAR},
       flag = #{flag,jdbcType=BIT},
       information = #{information,jdbcType=LONGVARCHAR}
@@ -163,9 +163,85 @@
       title = #{title,jdbcType=VARCHAR},
       user = #{user,jdbcType=INTEGER},
       medicine = #{medicine,jdbcType=VARCHAR},
-      hospital = #{hospital,jdbcType=INTEGER},
+      hospital = #{hospital,jdbcType=VARCHAR},
       doctor = #{doctor,jdbcType=VARCHAR},
       flag = #{flag,jdbcType=BIT}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <insert id="add" parameterType="map">
+    insert into disease
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="begindate != null">
+        begindate,
+      </if>
+      <if test="enddate != null">
+        enddate,
+      </if>
+      <if test="title != null">
+        title,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="medicine != null">
+        medicine,
+      </if>
+      <if test="hospital != null">
+        hospital,
+      </if>
+      <if test="doctor != null">
+        doctor,
+      </if>
+      <if test="information != null">
+        information,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="begindate != null">
+        #{begindate,jdbcType=DATE},
+      </if>
+      <if test="enddate != null">
+        #{enddate,jdbcType=DATE},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="medicine != null">
+        #{medicine,jdbcType=VARCHAR},
+      </if>
+      <if test="hospital != null">
+        #{hospital,jdbcType=VARCHAR},
+      </if>
+      <if test="doctor != null">
+        #{doctor,jdbcType=VARCHAR},
+      </if>
+      <if test="information != null">
+        #{information,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="selectByUser" parameterType="map" resultType="map">
+    select *
+    from disease
+    where user=#{user}
+    <if test="beginDate != null ">
+      AND begindate <![CDATA[>=]]> #{beginDate}
+    </if>
+    <if test="endDate != nul ">
+      AND enddate <![CDATA[<=]]> #{endDate}
+    </if>
+    <if test="start !=0 or limit!=0">
+      limit #{start},#{limit}
+    </if>
+  </select>
 </mapper>

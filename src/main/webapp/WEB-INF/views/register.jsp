@@ -74,7 +74,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">民族</label>
         <div class="layui-input-inline">
-            <input type="text" name="nation" lay-verify="title" autocomplete="off" placeholder="请输入民族" class="layui-input">
+            <input type="text" name="nation" autocomplete="off" placeholder="请输入民族" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
@@ -86,13 +86,13 @@
     <div class="layui-form-item">
         <label class="layui-form-label">手机号</label>
         <div class="layui-input-inline">
-            <input type="text" name="phone" lay-verify="title" autocomplete="off" placeholder="请输入手机号" class="layui-input">
+            <input type="text" name="phone" autocomplete="off" placeholder="请输入手机号" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">地址</label>
         <div class="layui-input-inline">
-            <input type="text" name="address" lay-verify="title" autocomplete="off" placeholder="请输入地址" class="layui-input">
+            <input type="text" name="address" autocomplete="off" placeholder="请输入地址" class="layui-input">
         </div>
     </div>
     <div class="layui-form-item layui-form-text">

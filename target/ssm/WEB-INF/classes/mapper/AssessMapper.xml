@@ -9,12 +9,13 @@
     <result column="agree" jdbcType="INTEGER" property="agree" />
     <result column="disagree" jdbcType="INTEGER" property="disagree" />
     <result column="flag" jdbcType="BIT" property="flag" />
+    <result column="hospital" jdbcType="INTEGER" property="hospital" />
   </resultMap>
   <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.yxy.ssm.model.Assess">
     <result column="information" jdbcType="LONGVARCHAR" property="information" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, user, anony, rank, agree, disagree, flag
+    id, user, anony, rank, agree, disagree, flag,hospital
   </sql>
   <sql id="Blob_Column_List">
     information
@@ -142,4 +143,106 @@
       flag = #{flag,jdbcType=BIT}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <select id="selectByHospital" parameterType="Map" resultType="map">
+    select *
+    from assess
+    where hospital = #{hospital}
+    <if test="start !=0 or limit!=0">
+      limit #{start},#{limit}
+    </if>
+  </select>
+  <update id="agree" parameterType="java.lang.Integer">
+    update assess
+    <set>
+      agree = agree + 1
+    </set>
+    where id = #{id}
+  </update>
+  <insert id="setAgree" parameterType="Map">
+    insert into user_assess(user,assess,type)
+    values(#{userid},#{id},0)
+  </insert>
+  <select id="checkAgree" parameterType="Map" resultType="java.lang.Integer">
+    select count(*)
+    from user_assess
+    where user=#{userid} and assess=#{id} and type=0
+  </select>
+  <update id="disagree" parameterType="java.lang.Integer">
+    update assess
+    <set>
+      disagree = disagree + 1
+    </set>
+    where id = #{id}
+  </update>
+  <insert id="setDisagree" parameterType="Map">
+    insert into user_assess(user,assess,type)
+    values(#{userid},#{id},1)
+  </insert>
+  <select id="checkDisagree" parameterType="Map" resultType="java.lang.Integer">
+    select count(*)
+    from user_assess
+    where user=#{userid} and assess=#{id} and type=1
+  </select>
+  <insert id="add" parameterType="Map">
+    insert into assess
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="anony != null">
+        anony,
+      </if>
+      <if test="rank != null">
+        rank,
+      </if>
+      <if test="agree != null">
+        agree,
+      </if>
+      <if test="disagree != null">
+        disagree,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+      <if test="information != null">
+        information,
+      </if>
+      <if test="hospital != null">
+        hospital,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=INTEGER},
+      </if>
+      <if test="anony != null">
+        #{anony,jdbcType=BIT},
+      </if>
+      <if test="rank != null">
+        #{rank,jdbcType=INTEGER},
+      </if>
+      <if test="agree != null">
+        #{agree,jdbcType=INTEGER},
+      </if>
+      <if test="disagree != null">
+        #{disagree,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=BIT},
+      </if>
+      <if test="information != null">
+        #{information,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="hospital != null">
+        #{hospital},
+      </if>
+    </trim>
+  </insert>
 </mapper>

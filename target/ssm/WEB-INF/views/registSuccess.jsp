@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>恭喜你，注册成功！<br>你的ID是${sessionScope.userInfo.userid}</h1>
-    <form action="/user/goIndex"><input type="submit" value="返回主页"></input></form>
+    <form action="/to/login"><input type="submit" value="返回"></input></form>
     <script src="${pageContext.request.contextPath}/RefResources/layui/layui.js"></script>
 </body>
 </html>
